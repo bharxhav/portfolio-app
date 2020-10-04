@@ -40,9 +40,11 @@ flutter:
   assets:
     - assets/bharxhav.png
   fonts:
-    - family:
+    - family: SansitaSwashed
       fonts:
         - asset: fonts/SansitaSwashed-Regular.ttf
+        - asset: fonts/SansitaSwashed-Bold.ttf
+          weight: 700
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
