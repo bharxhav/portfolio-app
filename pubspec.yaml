@@ -39,6 +39,7 @@ dev_dependencies:
 flutter:
   assets:
     - assets/bharxhav.png
+    - assets/qr_icon.png
   fonts:
     - family: SansitaSwashed
       fonts:
