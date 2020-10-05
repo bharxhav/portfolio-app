@@ -29,6 +29,9 @@ class _HomePageState extends State<HomePage> {
                 fit: BoxFit.fitHeight,
                 width: 150,
               ),
+              SizedBox(
+                height: 20,
+              ),
               Text(
                 'Bhargav Kantheti',
                 style: TextStyle(
@@ -40,6 +43,25 @@ class _HomePageState extends State<HomePage> {
                     ..style = PaintingStyle.stroke
                     ..strokeWidth = 1
                     ..color = Colors.orange[700],
+                ),
+              ),
+              Container(
+                child: Text(
+                  'Well, now you know!',
+                  style: TextStyle(
+                    fontStyle: FontStyle.italic,
+                    fontFamily: 'SansitaSwashed',
+                    fontSize: 16,
+                  ),
+                ),
+                padding: EdgeInsets.all(16.0),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.0),
+                child: Container(
+                  height: 1.0,
+                  width: 260.0,
+                  color: Colors.white,
                 ),
               ),
             ],
