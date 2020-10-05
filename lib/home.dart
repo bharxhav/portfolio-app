@@ -21,16 +21,6 @@ class _HomePageState extends State<HomePage> {
     double _width = MediaQuery.of(context).size.width;
     // bool darkTheme = true;
 
-    // Launches the QR Code
-    Widget _qrWidget() {
-      return QrImage(
-        data: "contact:{\nname:{$_name}\nphone:{$_phone}\nemail:{$_email}\n}",
-        version: QrVersions.auto,
-        size: _width * .85,
-        backgroundColor: Colors.white,
-      );
-    }
-
     // Launches the Email App
     void _launchEmail(String _email) {
       launch("mailto:$_email?subject=HelloThere!");
@@ -46,6 +36,32 @@ class _HomePageState extends State<HomePage> {
       setState(() {
         _qrOpen = !_qrOpen;
       });
+    }
+
+    // Launches the QR Code
+    Widget _qrWidget() {
+      return Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            QrImage(
+              data:
+                  "contact:{\nname:{$_name}\nphone:{$_phone}\nemail:{$_email}\n}",
+              version: QrVersions.auto,
+              size: _width * .60,
+              backgroundColor: Colors.white,
+            ),
+            SizedBox(
+              height: 40,
+            ),
+            RaisedButton(
+              onPressed: _qrState,
+              child: Text('Back'),
+              color: Colors.teal,
+            )
+          ],
+        ),
+      );
     }
 
     return MaterialApp(
