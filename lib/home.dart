@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -16,7 +18,7 @@ class _HomePageState extends State<HomePage> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Bhargav Kantheti'),
+          title: Text('Portefeuille'),
           leading: Icon(Icons.account_circle),
           backgroundColor: Colors.teal,
           centerTitle: true,
@@ -65,10 +67,29 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
               Container(
+                margin: const EdgeInsets.only(
+                  top: 30.0,
+                  left: 50.0,
+                  right: 50.0,
+                ),
+                padding: const EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                      // color: Colors.white,
+                      ),
+                  gradient: LinearGradient(colors: [
+                    Colors.teal,
+                    Colors.orange[700],
+                  ], begin: Alignment.bottomLeft, end: Alignment.topRight),
+                ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
-                      Icons.contact_phone,
+                      Icons.phone,
+                    ),
+                    SizedBox(
+                      width: 15,
                     ),
                     Center(
                       child: Text(
@@ -82,14 +103,31 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
-              SizedBox(
-                height: 15,
-              ),
               Container(
+                margin: const EdgeInsets.only(
+                  top: 10.0,
+                  bottom: 30.0,
+                  left: 50.0,
+                  right: 50.0,
+                ),
+                padding: const EdgeInsets.all(10.0),
+                decoration: BoxDecoration(
+                  border: Border.all(
+                      // color: Colors.white,
+                      ),
+                  gradient: LinearGradient(colors: [
+                    Colors.teal,
+                    Colors.orange[700],
+                  ], begin: Alignment.bottomLeft, end: Alignment.topRight),
+                ),
                 child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
                       Icons.mail,
+                    ),
+                    SizedBox(
+                      width: 15,
                     ),
                     Center(
                       child: Text(
@@ -103,6 +141,14 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              SizedBox(
+                height: 25,
+              ),
+              Image.asset(
+                'assets/qr_icon.png',
+                fit: BoxFit.fitHeight,
+                width: 50,
+              )
             ],
             mainAxisAlignment: MainAxisAlignment.center,
           ),
