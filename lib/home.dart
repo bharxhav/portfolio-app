@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
                 padding: EdgeInsets.symmetric(horizontal: 10.0),
                 child: Container(
                   height: 1.0,
-                  width: 260.0,
+                  width: 280.0,
                   color: Colors.white,
                 ),
               ),
@@ -77,10 +77,14 @@ class _HomePageState extends State<HomePage> {
                   border: Border.all(
                       // color: Colors.white,
                       ),
-                  gradient: LinearGradient(colors: [
-                    Colors.teal,
-                    Colors.orange[700],
-                  ], begin: Alignment.bottomLeft, end: Alignment.topRight),
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.teal,
+                      Colors.orange[700],
+                    ],
+                    begin: Alignment(0.2, 0.8),
+                    end: Alignment(0.9, 0.0),
+                  ),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -115,10 +119,14 @@ class _HomePageState extends State<HomePage> {
                   border: Border.all(
                       // color: Colors.white,
                       ),
-                  gradient: LinearGradient(colors: [
-                    Colors.teal,
-                    Colors.orange[700],
-                  ], begin: Alignment.bottomLeft, end: Alignment.topRight),
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.teal,
+                      Colors.orange[700],
+                    ],
+                    begin: Alignment(0.3, 0.8),
+                    end: Alignment(0.8, 0.3),
+                  ),
                 ),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
