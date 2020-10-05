@@ -64,6 +64,45 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.white,
                 ),
               ),
+              Container(
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.contact_phone,
+                    ),
+                    Center(
+                      child: Text(
+                        '+91 8897060465',
+                        style: TextStyle(
+                          fontFamily: 'SansitaSwashed',
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 15,
+              ),
+              Container(
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.mail,
+                    ),
+                    Center(
+                      child: Text(
+                        'kbhargav.gitam@gmail.com',
+                        style: TextStyle(
+                          fontFamily: 'SansitaSwashed',
+                          fontSize: 16,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ],
             mainAxisAlignment: MainAxisAlignment.center,
           ),
